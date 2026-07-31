@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "singularName": "setting",
+    "pluralName": "settings",
+    "displayName": "Paramètres globaux"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": { "localized": true }
+  },
+  "attributes": {
+    "companyName": { "type": "string", "default": "FOMICO Industries" },
+    "address": { "type": "text" },
+    "phone": { "type": "string" },
+    "email": { "type": "email" },
+    "whatsapp": { "type": "string" },
+    "hours": { "type": "string" },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.feature"
+    }
+  }
+}

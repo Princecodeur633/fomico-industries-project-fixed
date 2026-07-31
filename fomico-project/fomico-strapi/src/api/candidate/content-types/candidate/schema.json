@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "candidates",
+  "info": {
+    "singularName": "candidate",
+    "pluralName": "candidates",
+    "displayName": "Candidat"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nom": { "type": "string", "required": true },
+    "email": { "type": "email", "required": true },
+    "telephone": { "type": "string" },
+    "poste": { "type": "string" },
+    "message": { "type": "text" },
+    "cv": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["files"]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["Nouveau", "En étude", "Entretien", "Refusé", "Accepté", "Archivé"],
+      "default": "Nouveau"
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "title": "FOMICO Industries - Industrial Supplies & Machinery",
+    "description": "FOMICO Industries, your industrial partner in Congo. Hydraulic cylinders, hoses, fittings, PPE and custom solutions for oil, mining and industry."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About us",
+    "products": "Our products",
+    "services": "Our services",
+    "sectors": "Business sectors",
+    "projects": "Our projects",
+    "news": "News",
+    "careers": "Careers",
+    "contact": "Contact",
+    "quote": "Request a quote"
+  },
+  "hero": {
+    "title": "Robust and tailor-made solutions",
+    "subtitle": "Industrial supplier adapted to the most demanding environments",
+    "cta1": "Discover our products",
+    "cta2": "Request a quote"
+  },
+  "services": {
+    "title": "Our services",
+    "subtitle": "Comprehensive expertise at your service",
+    "maintenance": {
+      "title": "Maintenance & After-sales",
+      "desc": "Rapid intervention and preventive maintenance to ensure the continuity of your operations."
+    },
+    "consulting": {
+      "title": "Technical consulting",
+      "desc": "Personalized support from our engineers to optimize your equipment."
+    },
+    "delivery": {
+      "title": "Delivery & installation",
+      "desc": "Complete logistics with customs clearance included, delivery throughout the CEMAC region."
+    },
+    "custom": {
+      "title": "Custom solutions",
+      "desc": "Design and manufacturing adapted to your most complex technical specifications."
+    }
+  },
+  "sectors": {
+    "title": "Business sectors",
+    "subtitle": "Solutions for every industry",
+    "oilgas": "Oil & Gas",
+    "mining": "Mining",
+    "industry": "Industry",
+    "energy": "Energy",
+    "construction": "Construction",
+    "marine": "Marine",
+    "agrifood": "Agri-food",
+    "telecom": "Telecommunications",
+    "water": "Water & Sanitation"
+  },
+  "products": {
+    "title": "Our products",
+    "subtitle": "A complete range of industrial supplies",
+    "hydraulic": "Hydraulic cylinders",
+    "flexible": "High-pressure hoses",
+    "fitting": "Fittings and accessories",
+    "epi": "Personal protective equipment",
+    "valve": "Industrial valves",
+    "instrument": "Instrumentation"
+  },
+  "stats": {
+    "title": "FOMICO in figures",
+    "experience": "Years of experience",
+    "products": "Product references",
+    "clients": "Satisfied clients",
+    "countries": "Countries served"
+  },
+  "testimonials": {
+    "title": "They trust us",
+    "subtitle": "Testimonials from our partners"
+  },
+  "partners": {
+    "title": "Our partners",
+    "subtitle": "Strong collaborations with global leaders"
+  },
+  "cta": {
+    "title": "Ready to optimize your equipment?",
+    "subtitle": "Contact us for a tailor-made solution adapted to your industrial needs.",
+    "button": "Request a free quote"
+  },
+  "news": {
+    "title": "Latest news",
+    "subtitle": "Stay informed about our latest updates and events",
+    "readMore": "Read more"
+  },
+  "footer": {
+    "company": "FOMICO Industries",
+    "tagline": "Cutting-edge Industrial Supplies & Machinery",
+    "address": "1 Rue De La Piscine, Brazzaville, Republic of Congo",
+    "address2": "Pointe-Noire, Republic of Congo",
+    "phone": "+242 06 467 1313",
+    "email": "contact@fomico-industries.com",
+    "hours": "Monday - Friday: 8:30 AM - 5:30 PM",
+    "quickLinks": "Quick links",
+    "services": "Services",
+    "legal": "Legal notices",
+    "privacy": "Privacy policy",
+    "rights": "All rights reserved."
+  }
+}

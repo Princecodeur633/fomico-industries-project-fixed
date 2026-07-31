@@ -1,0 +1,40 @@
+############################
+# Node.js
+############################
+/node_modules/
+/.node_history
+npm-debug.log*
+
+############################
+# Strapi
+############################
+.cache/
+.strapi/
+.strapi-updater.json
+build/
+dist/
+export_*.tar.gz
+.tmp/
+
+############################
+# Database
+############################
+data.db
+database/*.sqlite
+
+############################
+# Env
+############################
+.env
+.env.local
+
+############################
+# Uploads (keep the folder, ignore the contents)
+############################
+public/uploads/*
+!public/uploads/.gitkeep
+
+############################
+# Misc
+############################
+.DS_Store

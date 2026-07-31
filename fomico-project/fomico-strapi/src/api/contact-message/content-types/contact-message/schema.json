@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_messages",
+  "info": {
+    "singularName": "contact-message",
+    "pluralName": "contact-messages",
+    "displayName": "Message de contact"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nom": { "type": "string", "required": true },
+    "email": { "type": "email", "required": true },
+    "sujet": { "type": "string", "required": true },
+    "message": { "type": "text", "required": true },
+    "status": {
+      "type": "enumeration",
+      "enum": ["Nouveau", "Lu", "Répondu", "Archivé"],
+      "default": "Nouveau"
+    }
+  }
+}

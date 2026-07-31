@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_product_features",
+  "info": {
+    "displayName": "Caractéristique",
+    "description": "Élément de liste réutilisable"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

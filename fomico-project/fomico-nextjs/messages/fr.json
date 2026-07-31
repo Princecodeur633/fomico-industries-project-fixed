@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "title": "FOMICO Industries - Fournitures & Machines Industrielles",
+    "description": "FOMICO Industries, votre partenaire industriel au Congo. Vérins hydrauliques, flexibles, raccords, EPI et solutions sur mesure pour le pétrole, les mines et l'industrie."
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "Qui sommes-nous",
+    "products": "Nos produits",
+    "services": "Nos services",
+    "sectors": "Secteurs d'activité",
+    "projects": "Nos réalisations",
+    "news": "Actualités",
+    "careers": "Carrières",
+    "contact": "Contact",
+    "quote": "Demande de devis"
+  },
+  "hero": {
+    "title": "Solutions robustes et sur mesure",
+    "subtitle": "Fournisseur industriel adapté aux environnements les plus exigeants",
+    "cta1": "Découvrir nos produits",
+    "cta2": "Demander un devis"
+  },
+  "services": {
+    "title": "Nos services",
+    "subtitle": "Une expertise complète à votre service",
+    "maintenance": {
+      "title": "Maintenance & SAV",
+      "desc": "Intervention rapide et maintenance préventive pour garantir la continuité de vos opérations."
+    },
+    "consulting": {
+      "title": "Conseils techniques",
+      "desc": "Accompagnement personnalisé par nos ingénieurs pour optimiser vos équipements."
+    },
+    "delivery": {
+      "title": "Livraison & installation",
+      "desc": "Logistique complète avec dédouanement inclus, livraison sur tout le territoire CEMAC."
+    },
+    "custom": {
+      "title": "Solutions sur mesure",
+      "desc": "Conception et fabrication adaptées à vos spécifications techniques les plus complexes."
+    }
+  },
+  "sectors": {
+    "title": "Secteurs d'activité",
+    "subtitle": "Des solutions pour chaque industrie",
+    "oilgas": "Pétrole & Gaz",
+    "mining": "Mines",
+    "industry": "Industrie",
+    "energy": "Énergie",
+    "construction": "Construction",
+    "marine": "Marine",
+    "agrifood": "Agroalimentaire",
+    "telecom": "Télécommunications",
+    "water": "Eau & Assainissement"
+  },
+  "products": {
+    "title": "Nos produits",
+    "subtitle": "Une gamme complète de fournitures industrielles",
+    "hydraulic": "Vérins hydrauliques",
+    "flexible": "Flexibles haute pression",
+    "fitting": "Raccords et accessoires",
+    "epi": "Équipements de protection",
+    "valve": "Robinetterie industrielle",
+    "instrument": "Instrumentation"
+  },
+  "stats": {
+    "title": "FOMICO en chiffres",
+    "experience": "Années d'expérience",
+    "products": "Références produits",
+    "clients": "Clients satisfaits",
+    "countries": "Pays desservis"
+  },
+  "testimonials": {
+    "title": "Ils nous font confiance",
+    "subtitle": "Témoignages de nos partenaires"
+  },
+  "partners": {
+    "title": "Nos partenaires",
+    "subtitle": "Des collaborations solides avec des leaders mondiaux"
+  },
+  "cta": {
+    "title": "Prêt à optimiser vos équipements ?",
+    "subtitle": "Contactez-nous pour une solution sur mesure adaptée à vos besoins industriels.",
+    "button": "Demander un devis gratuit"
+  },
+  "news": {
+    "title": "Dernières actualités",
+    "subtitle": "Restez informé de nos nouveautés et événements",
+    "readMore": "Lire la suite"
+  },
+  "footer": {
+    "company": "FOMICO Industries",
+    "tagline": "Fournitures & Machines Industrielles de pointe",
+    "address": "1 Rue De La Piscine, Brazzaville, République du Congo",
+    "address2": "Pointe-Noire, République du Congo",
+    "phone": "+242 06 467 1313",
+    "email": "contact@fomico-industries.com",
+    "hours": "Lundi - Vendredi : 8h30 - 17h30",
+    "quickLinks": "Liens rapides",
+    "services": "Services",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "rights": "Tous droits réservés."
+  }
+}

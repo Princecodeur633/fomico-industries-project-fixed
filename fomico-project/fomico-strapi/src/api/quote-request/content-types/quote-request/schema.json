@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quote_requests",
+  "info": {
+    "singularName": "quote-request",
+    "pluralName": "quote-requests",
+    "displayName": "Demande de devis"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nom": { "type": "string", "required": true },
+    "societe": { "type": "string", "required": true },
+    "email": { "type": "email", "required": true },
+    "telephone": { "type": "string", "required": true },
+    "produit": { "type": "string", "required": true },
+    "quantite": { "type": "string", "required": true },
+    "message": { "type": "text", "required": true },
+    "fichier": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["files"]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["Nouveau", "En cours", "Traité", "Archivé"],
+      "default": "Nouveau"
+    }
+  }
+}
