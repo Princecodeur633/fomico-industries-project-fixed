@@ -84,7 +84,7 @@ export default function Header() {
             <div className="flex flex-col">
               <span className="text-xl font-bold text-fomico-orange leading-tight">FOMICO</span>
               <span className="text-xs text-fomico-gray-dark leading-tight">
-                par Fourniture Machine industrielle du Congo
+                Fourniture Machine industrielle du Congo
               </span>
             </div>
           </Link>
