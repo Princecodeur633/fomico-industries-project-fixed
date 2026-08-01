@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import {
@@ -10,7 +11,6 @@ import {
   ChevronDown,
   Phone,
   Mail,
-  Factory,
 } from "lucide-react";
 import LocaleSwitcher from "./LocaleSwitcher";
 
@@ -70,13 +70,22 @@ export default function Header() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link href={`/${locale}/`} className="flex items-center gap-2 group">
-            <div className="w-10 h-10 bg-fomico-navy rounded-lg flex items-center justify-center group-hover:bg-fomico-orange transition-colors">
-              <Factory className="w-6 h-6 text-white" />
+          <Link href={`/${locale}/`} className="flex items-center gap-2.5 group">
+            <div className="relative w-11 h-11 shrink-0 transition-transform group-hover:scale-105">
+              <Image
+                src="/logo.png"
+                alt="FOMICO Industries"
+                fill
+                sizes="44px"
+                className="object-contain"
+                priority
+              />
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-bold text-fomico-navy leading-tight">FOMICO</span>
-              <span className="text-xs text-fomico-gray-dark leading-tight">INDUSTRIES</span>
+              <span className="text-xl font-bold text-fomico-orange leading-tight">FOMICO</span>
+              <span className="text-xs text-fomico-gray-dark leading-tight">
+                par Fourniture Machine industrielle du Congo
+              </span>
             </div>
           </Link>
 

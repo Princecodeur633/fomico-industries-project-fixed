@@ -1,6 +1,7 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
-import { Factory, MapPin, Phone, Mail, Clock, Facebook, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Facebook, Linkedin } from "lucide-react";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -25,12 +26,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Company */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-fomico-orange rounded-lg flex items-center justify-center">
-                <Factory className="w-6 h-6 text-white" />
+            <div className="flex items-center gap-2.5 mb-4">
+              <div className="relative w-11 h-11 shrink-0">
+                <Image src="/logo.png" alt="FOMICO Industries" fill sizes="44px" className="object-contain" />
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold leading-tight">{t("company")}</span>
+                <span className="text-lg font-bold leading-tight">
+                  <span className="text-fomico-orange">FOMICO</span>{" "}
+                  {t("company").replace(/^FOMICO\s*/i, "")}
+                </span>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed mb-4">{t("tagline")}</p>

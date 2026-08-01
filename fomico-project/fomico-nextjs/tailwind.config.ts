@@ -10,12 +10,12 @@ const config: Config = {
     extend: {
       colors: {
         fomico: {
-          navy: "#0a1628",
-          "navy-light": "#1a2a42",
-          "navy-dark": "#060d18",
-          orange: "#e85d04",
-          "orange-light": "#f48c06",
-          "orange-dark": "#d00000",
+          navy: "#141414",
+          "navy-light": "#2b2b2b",
+          "navy-dark": "#000000",
+          orange: "#c8102e",
+          "orange-light": "#e2314f",
+          "orange-dark": "#8f0a1f",
           gray: "#f4f4f5",
           "gray-dark": "#71717a",
         },
