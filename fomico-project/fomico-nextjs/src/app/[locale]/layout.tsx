@@ -5,8 +5,9 @@ import { getMessages } from "next-intl/server";
 import "../globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WelcomeModal from "@/components/WelcomeModal";
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
@@ -84,6 +85,7 @@ export default async function LocaleLayout({
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
+          <WelcomeModal />
         </NextIntlClientProvider>
       </body>
     </html>

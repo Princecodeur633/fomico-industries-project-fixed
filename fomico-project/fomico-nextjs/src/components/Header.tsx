@@ -13,6 +13,8 @@ import {
   Mail,
 } from "lucide-react";
 import LocaleSwitcher from "./LocaleSwitcher";
+import SocialLinks from "./SocialLinks";
+import NotificationBell from "./NotificationBell";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -39,7 +41,15 @@ export default function Header() {
     { href: `/${locale}/services/`, label: t("services") },
     { href: `/${locale}/secteurs/`, label: t("sectors") },
     { href: `/${locale}/realisations/`, label: t("projects") },
-    { href: `/${locale}/actualites/`, label: t("news") },
+    {
+      href: `/${locale}/actualites/`,
+      label: t("news"),
+      children: [
+        { href: `/${locale}/actualites/`, label: "Toutes les actualités" },
+        { href: `/${locale}/actualites/documentation/`, label: "Documentation" },
+        { href: `/${locale}/actualites/galerie/`, label: "Galerie" },
+      ],
+    },
     { href: `/${locale}/contact/`, label: t("contact") },
   ];
 
@@ -60,7 +70,8 @@ export default function Header() {
               <span className="hidden sm:inline">contact@fomico-industries.com</span>
             </a>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-4">
+            <SocialLinks size="sm" className="hidden sm:flex" />
             <LocaleSwitcher />
           </div>
         </div>
@@ -133,23 +144,27 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
+          {/* CTA Button + Notifications */}
+          <div className="hidden lg:flex items-center gap-3">
+            <NotificationBell />
             <Link href={`/${locale}/devis/`} className="btn-primary text-sm">
               {t("quote")}
             </Link>
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            className="lg:hidden p-2 text-fomico-navy hover:bg-gray-100 rounded-lg transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            <span className="inline-block transition-transform duration-200" style={{ transform: mobileMenuOpen ? "rotate(90deg)" : "rotate(0deg)" }}>
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </span>
-          </button>
+          {/* Mobile: notification bell + menu button */}
+          <div className="flex items-center gap-1 lg:hidden">
+            <NotificationBell />
+            <button
+              className="p-2 text-fomico-navy hover:bg-gray-100 rounded-lg transition-colors"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <span className="inline-block transition-transform duration-200" style={{ transform: mobileMenuOpen ? "rotate(90deg)" : "rotate(0deg)" }}>
+                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              </span>
+            </button>
+          </div>
         </div>
       </div>
 

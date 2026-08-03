@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
-import { MapPin, Phone, Mail, Clock, Facebook, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import SocialLinks from "./SocialLinks";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -38,22 +39,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-relaxed mb-4">{t("tagline")}</p>
-            <div className="flex items-center gap-3">
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-fomico-orange transition-colors"
-              >
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-fomico-orange transition-colors"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-            </div>
+            <SocialLinks size="md" />
           </div>
 
           {/* Quick links */}
