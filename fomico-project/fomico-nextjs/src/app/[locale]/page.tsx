@@ -61,10 +61,10 @@ export default async function HomePage({
   ];
 
   const stats = [
-    { value: "3+", label: tStats("experience") },
-    { value: "1000+", label: tStats("products") },
-    { value: "150+", label: tStats("clients") },
-    { value: "6", label: tStats("countries") },
+    { value: "6+", label: tStats("experience") },
+    { value: "10.000+", label: tStats("products") },
+    { value: "2000+", label: tStats("clients") },
+    { value: "République du Congo, pays d'Afrique et France", label: tStats("countries") },
   ];
 
   return (

@@ -52,16 +52,16 @@ export default function Hero() {
           {/* Trust indicators */}
           <div className="mt-12 pt-8 border-t border-white/20 grid grid-cols-3 gap-6">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-white">3+</div>
+              <div className="text-2xl md:text-3xl font-bold text-white">6+</div>
               <div className="text-sm text-gray-300">Années d&apos;expérience</div>
             </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-white">1000+</div>
+              <div className="text-2xl md:text-3xl font-bold text-white">10.000+</div>
               <div className="text-sm text-gray-300">Références produits</div>
             </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-white">6</div>
-              <div className="text-sm text-gray-300">Pays CEMAC</div>
+              <div className="text-2xl md:text-3xl font-bold text-white">2000+</div>
+              <div className="text-sm text-gray-300">Clients satisfaits</div>
             </div>
           </div>
         </div>

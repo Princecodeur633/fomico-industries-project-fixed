@@ -41,7 +41,7 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-semibold text-fomico-navy text-sm">Adresse</h3>
                     <p className="text-sm text-fomico-gray-dark mt-1">
-                      14e Étage,  Tour Business  Center (Tour  Jumelles) M'pila<br />
+                      14e Étage, Tour Business Center (Tour Jumelles) M'pila<br />
                       Brazzaville, République du Congo
                     </p>
                     <p className="text-sm text-fomico-gray-dark mt-2">

@@ -198,7 +198,7 @@ export default function AboutPage() {
                 <div className="text-sm text-gray-300">Produits certifiés</div>
               </div>
               <div className="bg-white/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-fomico-orange mb-2">6</div>
+                <div className="text-3xl font-bold text-fomico-orange mb-2">République du Congo, pays d'Afrique et France</div>
                 <div className="text-sm text-gray-300">Pays desservis</div>
               </div>
               <div className="bg-white/10 rounded-xl p-6 text-center">
