@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "title": "FOMICO Industries - 工业用品与机械",
+    "description": "FOMICO Industries，您在刚果的工业合作伙伴。液压缸、高压软管、接头、个人防护装备及石油、矿业和工业定制解决方案。"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "我们的产品",
+    "services": "我们的服务",
+    "sectors": "业务领域",
+    "projects": "我们的项目",
+    "news": "新闻",
+    "careers": "职业机会",
+    "contact": "联系我们",
+    "quote": "询价"
+  },
+  "hero": {
+    "title": "坚固且量身定制的解决方案",
+    "subtitle": "适应最严苛环境的工业供应商",
+    "badge": "工业用品与机械",
+    "cta1": "探索我们的产品",
+    "cta2": "请求报价",
+    "slides": {
+      "oilgas": {
+        "title": "石油与天然气",
+        "spec": "API接头、高压阀门及认证海上设备"
+      },
+      "mining": {
+        "title": "矿业",
+        "spec": "适用于极端条件的钻探、破碎和搬运设备"
+      },
+      "industry": {
+        "title": "工业",
+        "spec": "液压、气动、自动化及工业维护"
+      },
+      "energy": {
+        "title": "能源",
+        "spec": "发电厂及能源配送网络设备"
+      },
+      "agrifood": {
+        "title": "农业食品",
+        "spec": "符合HACCP和ISO 22000标准的食品级不锈钢设备"
+      },
+      "maintenance": {
+        "title": "工业维护",
+        "spec": "预防性维护、售后服务及快速现场干预"
+      },
+      "telecom": {
+        "title": "电信",
+        "spec": "网络基础设施、防护设备及安装解决方案"
+      }
+    }
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "全面的专业知识为您服务",
+    "maintenance": {
+      "title": "维护与售后",
+      "desc": "快速干预和预防性维护，确保您的运营连续性。"
+    },
+    "consulting": {
+      "title": "技术咨询",
+      "desc": "我们的工程师提供个性化支持，优化您的设备。"
+    },
+    "delivery": {
+      "title": "交付与安装",
+      "desc": "完整物流，含清关，覆盖整个CEMAC地区。"
+    },
+    "custom": {
+      "title": "定制解决方案",
+      "desc": "根据您最复杂的技术规格进行设计和制造。"
+    }
+  },
+  "sectors": {
+    "title": "业务领域",
+    "subtitle": "为每个行业提供解决方案",
+    "oilgas": "石油与天然气",
+    "mining": "矿业",
+    "industry": "工业",
+    "energy": "能源",
+    "construction": "建筑",
+    "marine": "海事",
+    "agrifood": "农业食品",
+    "maintenance": "工业维护",
+    "telecom": "电信",
+    "water": "水务与卫生"
+  },
+  "products": {
+    "title": "我们的产品",
+    "subtitle": "完整的工业用品系列",
+    "hydraulic": "液压缸",
+    "flexible": "高压软管",
+    "fitting": "接头及配件",
+    "epi": "个人防护装备",
+    "valve": "工业阀门",
+    "instrument": "仪器仪表"
+  },
+  "stats": {
+    "title": "FOMICO数据",
+    "experience": "年经验",
+    "products": "产品参考",
+    "clients": "满意客户",
+    "countries": "服务国家",
+    "countriesValue": "刚果共和国、非洲国家及法国"
+  },
+  "testimonials": {
+    "title": "他们信任我们",
+    "subtitle": "合作伙伴的见证"
+  },
+  "partners": {
+    "title": "我们的合作伙伴",
+    "subtitle": "与全球领导者的稳固合作"
+  },
+  "cta": {
+    "title": "准备好优化您的设备了吗？",
+    "subtitle": "联系我们，获取适合您工业需求的定制解决方案。",
+    "button": "免费询价"
+  },
+  "news": {
+    "title": "最新新闻",
+    "subtitle": "了解我们的最新动态和活动",
+    "readMore": "阅读更多"
+  },
+  "welcome": {
+    "title": "欢迎来到",
+    "subtitle": "您在刚果值得信赖的工业合作伙伴——为石油、矿业和工业提供用品和机械。",
+    "sectorsTitle": "我们的业务领域",
+    "discover": "了解FOMICO",
+    "continue": "继续浏览",
+    "close": "关闭"
+  },
+  "about": {
+    "title": "关于我们",
+    "heroDesc": "FOMICO Industries在尖端工业用品和机械制造方面表现出色。2021年在布拉柴维尔成立，我们已成为刚果和CEMAC地区最严苛行业的值得信赖的合作伙伴。",
+    "history": "我们的历史",
+    "mission": "我们的使命",
+    "vision": "我们的愿景",
+    "values": "我们的价值观",
+    "valuesSubtitle": "指导我们日常行动的原则。",
+    "whyChoose": "为什么选择FOMICO？",
+    "strategicPartners": "我们的战略合作伙伴",
+    "strategicPartnersDesc": "与全球领导者的稳固合作，保证卓越的专业知识和服务质量。",
+    "majorPartners": "主要合作伙伴",
+    "responseTime": "响应时间",
+    "certifiedProducts": "认证产品",
+    "creationYear": "成立年份"
+  },
+  "footer": {
+    "company": "FOMICO Industries",
+    "tagline": "尖端工业用品与机械",
+    "address": "刚果共和国布拉柴维尔M'pila商业中心（双子塔）14层",
+    "address2": "刚果共和国黑角",
+    "phone": "+242 06 467 1313",
+    "email": "contact@fomico-industries.com",
+    "hours": "周一至周五：8:30 - 17:30",
+    "quickLinks": "快速链接",
+    "services": "服务",
+    "legal": "法律声明",
+    "privacy": "隐私政策",
+    "rights": "版权所有。"
+  }
+}

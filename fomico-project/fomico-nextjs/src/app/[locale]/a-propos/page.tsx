@@ -1,12 +1,14 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { CheckCircle, Target, Eye, Award, Users, Shield, Globe, TrendingUp } from "lucide-react";
+import AboutPartnersCounter from "@/components/AboutPartnersCounter";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "nav" });
+  const tAbout = await getTranslations({ locale, namespace: "about" });
   return {
     title: `${t("about")} | FOMICO Industries`,
-    description: "Découvrez FOMICO Industries, fondée en 2021 à Brazzaville. Expertise en fournitures industrielles, hydraulique et solutions sur mesure pour le Congo et la CEMAC.",
+    description: tAbout("heroDesc"),
   };
 }
 
@@ -40,7 +42,14 @@ const partenaires = [
   "GEA Westfalia",
 ];
 
-export default function AboutPage() {
+export default async function AboutPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const t = await getTranslations({ locale, namespace: "about" });
+  const tStats = await getTranslations({ locale, namespace: "stats" });
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero */}
@@ -51,12 +60,10 @@ export default function AboutPage() {
         <div className="container-custom relative">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Qui sommes-nous ?
+              {t("title")}
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed">
-              FOMICO Industries excelle dans la fabrication de fournitures et machines industrielles de pointe. 
-              Fondée en 2021 à Brazzaville, nous sommes devenus un partenaire de confiance pour les industries 
-              les plus exigeantes du Congo et de la zone CEMAC.
+              {t("heroDesc")}
             </p>
           </div>
         </div>
@@ -68,7 +75,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl font-bold text-fomico-navy mb-6">
-                Notre histoire
+                {t("history")}
               </h2>
               <div className="space-y-4 text-fomico-gray-dark leading-relaxed">
                 <p>
@@ -99,7 +106,7 @@ export default function AboutPage() {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-fomico-orange text-white p-6 rounded-xl shadow-xl">
                 <div className="text-3xl font-bold">2021</div>
-                <div className="text-sm opacity-90">Année de création</div>
+                <div className="text-sm opacity-90">{t("creationYear")}</div>
               </div>
             </div>
           </div>
@@ -114,7 +121,7 @@ export default function AboutPage() {
               <div className="w-12 h-12 bg-fomico-orange/10 rounded-lg flex items-center justify-center mb-6">
                 <Target className="w-6 h-6 text-fomico-orange" />
               </div>
-              <h3 className="text-2xl font-bold text-fomico-navy mb-4">Notre mission</h3>
+              <h3 className="text-2xl font-bold text-fomico-navy mb-4">{t("mission")}</h3>
               <p className="text-fomico-gray-dark leading-relaxed">
                 Fournir des solutions industrielles robustes et sur mesure qui permettent à nos clients 
                 d&apos;optimiser leurs opérations, de réduire leurs temps d&apos;arrêt et d&apos;améliorer 
@@ -125,7 +132,7 @@ export default function AboutPage() {
               <div className="w-12 h-12 bg-fomico-orange/10 rounded-lg flex items-center justify-center mb-6">
                 <Eye className="w-6 h-6 text-fomico-orange" />
               </div>
-              <h3 className="text-2xl font-bold text-fomico-navy mb-4">Notre vision</h3>
+              <h3 className="text-2xl font-bold text-fomico-navy mb-4">{t("vision")}</h3>
               <p className="text-fomico-gray-dark leading-relaxed">
                 Devenir le leader de la distribution industrielle en Afrique centrale, reconnu pour 
                 notre expertise technique, notre réactivité et notre capacité à livrer des solutions 
@@ -141,10 +148,10 @@ export default function AboutPage() {
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-fomico-navy mb-4">
-              Nos valeurs
+              {t("values")}
             </h2>
             <p className="text-lg text-fomico-gray-dark max-w-2xl mx-auto">
-              Les principes qui guident chacune de nos actions au quotidien.
+              {t("valuesSubtitle")}
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -170,7 +177,7 @@ export default function AboutPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Pourquoi choisir FOMICO ?
+                {t("whyChoose")}
               </h2>
               <div className="space-y-4">
                 {[
@@ -191,20 +198,17 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-white/10 rounded-xl p-6 text-center">
                 <div className="text-3xl font-bold text-fomico-orange mb-2">24h</div>
-                <div className="text-sm text-gray-300">Délai de réponse</div>
+                <div className="text-sm text-gray-300">{t("responseTime")}</div>
               </div>
               <div className="bg-white/10 rounded-xl p-6 text-center">
                 <div className="text-3xl font-bold text-fomico-orange mb-2">100%</div>
-                <div className="text-sm text-gray-300">Produits certifiés</div>
+                <div className="text-sm text-gray-300">{t("certifiedProducts")}</div>
               </div>
               <div className="bg-white/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-fomico-orange mb-2">République du Congo, pays d'Afrique et France</div>
-                <div className="text-sm text-gray-300">Pays desservis</div>
+                <div className="text-lg md:text-xl font-bold text-fomico-orange mb-2 leading-tight">{tStats("countriesValue")}</div>
+                <div className="text-sm text-gray-300">{tStats("countries")}</div>
               </div>
-              <div className="bg-white/10 rounded-xl p-6 text-center">
-                <div className="text-3xl font-bold text-fomico-orange mb-2">4+</div>
-                <div className="text-sm text-gray-300">Partenaires majeurs</div>
-              </div>
+              <AboutPartnersCounter />
             </div>
           </div>
         </div>
@@ -214,11 +218,10 @@ export default function AboutPage() {
       <section className="section-padding bg-gray-50">
         <div className="container-custom text-center">
           <h2 className="text-3xl font-bold text-fomico-navy mb-4">
-            Nos partenaires stratégiques
+            {t("strategicPartners")}
           </h2>
           <p className="text-lg text-fomico-gray-dark max-w-2xl mx-auto mb-12">
-            Des collaborations solides avec des leaders mondiaux pour vous garantir 
-            expertise et qualité de service exceptionnelles.
+            {t("strategicPartnersDesc")}
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             {partenaires.map((partenaire) => (

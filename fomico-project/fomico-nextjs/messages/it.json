@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "title": "FOMICO Industries - Forniture e Macchinari Industriali",
+    "description": "FOMICO Industries, il vostro partner industriale in Congo. Cilindri idraulici, tubi flessibili, raccordi, DPI e soluzioni su misura per petrolio, miniere e industria."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "products": "I nostri prodotti",
+    "services": "I nostri servizi",
+    "sectors": "Settori di attività",
+    "projects": "I nostri progetti",
+    "news": "Notizie",
+    "careers": "Carriere",
+    "contact": "Contatti",
+    "quote": "Richiedi un preventivo"
+  },
+  "hero": {
+    "title": "Soluzioni robuste e su misura",
+    "subtitle": "Fornitore industriale adatto agli ambienti più esigenti",
+    "badge": "Forniture e Macchinari Industriali",
+    "cta1": "Scopri i nostri prodotti",
+    "cta2": "Richiedi un preventivo",
+    "slides": {
+      "oilgas": {
+        "title": "Petrolio e Gas",
+        "spec": "Raccordi API, valvole ad alta pressione e attrezzature offshore certificate"
+      },
+      "mining": {
+        "title": "Miniere",
+        "spec": "Attrezzature per perforazione, frantumazione e movimentazione in condizioni estreme"
+      },
+      "industry": {
+        "title": "Industria",
+        "spec": "Idraulica, pneumatica, automazione e manutenzione industriale"
+      },
+      "energy": {
+        "title": "Energia",
+        "spec": "Attrezzature per centrali elettriche e reti di distribuzione energetica"
+      },
+      "agrifood": {
+        "title": "Agroalimentare",
+        "spec": "Attrezzature in acciaio inox alimentare conformi HACCP e ISO 22000"
+      },
+      "maintenance": {
+        "title": "Manutenzione industriale",
+        "spec": "Manutenzione preventiva, assistenza post-vendita e interventi rapidi in loco"
+      },
+      "telecom": {
+        "title": "Telecomunicazioni",
+        "spec": "Infrastrutture di rete, attrezzature di protezione e soluzioni di installazione"
+      }
+    }
+  },
+  "services": {
+    "title": "I nostri servizi",
+    "subtitle": "Competenza completa al vostro servizio",
+    "maintenance": {
+      "title": "Manutenzione e assistenza",
+      "desc": "Intervento rapido e manutenzione preventiva per garantire la continuità delle vostre operazioni."
+    },
+    "consulting": {
+      "title": "Consulenza tecnica",
+      "desc": "Supporto personalizzato dei nostri ingegneri per ottimizzare le vostre attrezzature."
+    },
+    "delivery": {
+      "title": "Consegna e installazione",
+      "desc": "Logistica completa con sdoganamento incluso, consegna in tutta la regione CEMAC."
+    },
+    "custom": {
+      "title": "Soluzioni su misura",
+      "desc": "Progettazione e produzione adattate alle vostre specifiche tecniche più complesse."
+    }
+  },
+  "sectors": {
+    "title": "Settori di attività",
+    "subtitle": "Soluzioni per ogni settore industriale",
+    "oilgas": "Petrolio e Gas",
+    "mining": "Miniere",
+    "industry": "Industria",
+    "energy": "Energia",
+    "construction": "Costruzione",
+    "marine": "Marino",
+    "agrifood": "Agroalimentare",
+    "maintenance": "Manutenzione industriale",
+    "telecom": "Telecomunicazioni",
+    "water": "Acqua e Igiene"
+  },
+  "products": {
+    "title": "I nostri prodotti",
+    "subtitle": "Una gamma completa di forniture industriali",
+    "hydraulic": "Cilindri idraulici",
+    "flexible": "Tubi flessibili ad alta pressione",
+    "fitting": "Raccordi e accessori",
+    "epi": "Dispositivi di protezione individuale",
+    "valve": "Valvole industriali",
+    "instrument": "Strumentazione"
+  },
+  "stats": {
+    "title": "FOMICO in cifre",
+    "experience": "Anni di esperienza",
+    "products": "Referenze prodotti",
+    "clients": "Clienti soddisfatti",
+    "countries": "Paesi serviti",
+    "countriesValue": "Repubblica del Congo, paesi africani e Francia"
+  },
+  "testimonials": {
+    "title": "Si fidano di noi",
+    "subtitle": "Testimonianze dei nostri partner"
+  },
+  "partners": {
+    "title": "I nostri partner",
+    "subtitle": "Collaborazioni solide con leader mondiali"
+  },
+  "cta": {
+    "title": "Pronti a ottimizzare le vostre attrezzature?",
+    "subtitle": "Contattateci per una soluzione su misura adattata alle vostre esigenze industriali.",
+    "button": "Richiedi un preventivo gratuito"
+  },
+  "news": {
+    "title": "Ultime notizie",
+    "subtitle": "Restate informati sulle nostre novità ed eventi",
+    "readMore": "Leggi di più"
+  },
+  "welcome": {
+    "title": "Benvenuti in",
+    "subtitle": "Il vostro partner industriale di fiducia in Congo — forniture e macchinari per petrolio, miniere e industria.",
+    "sectorsTitle": "I nostri settori di attività",
+    "discover": "Scopri FOMICO",
+    "continue": "Continua la navigazione",
+    "close": "Chiudi"
+  },
+  "about": {
+    "title": "Chi siamo",
+    "heroDesc": "FOMICO Industries eccelle nella produzione di forniture e macchinari industriali all'avanguardia. Fondata nel 2021 a Brazzaville, siamo diventati un partner di fiducia per le industrie più esigenti del Congo e della regione CEMAC.",
+    "history": "La nostra storia",
+    "mission": "La nostra missione",
+    "vision": "La nostra visione",
+    "values": "I nostri valori",
+    "valuesSubtitle": "I principi che guidano ogni nostra azione quotidiana.",
+    "whyChoose": "Perché scegliere FOMICO?",
+    "strategicPartners": "I nostri partner strategici",
+    "strategicPartnersDesc": "Collaborazioni solide con leader mondiali per garantirvi competenza e qualità del servizio eccezionali.",
+    "majorPartners": "Partner principali",
+    "responseTime": "Tempo di risposta",
+    "certifiedProducts": "Prodotti certificati",
+    "creationYear": "Anno di fondazione"
+  },
+  "footer": {
+    "company": "FOMICO Industries",
+    "tagline": "Forniture e Macchinari Industriali all'avanguardia",
+    "address": "14° piano, Tour Business Center (Torri Gemelle) M'pila Brazzaville, Repubblica del Congo",
+    "address2": "Pointe-Noire, Repubblica del Congo",
+    "phone": "+242 06 467 1313",
+    "email": "contact@fomico-industries.com",
+    "hours": "Lunedì - Venerdì: 8:30 - 17:30",
+    "quickLinks": "Link rapidi",
+    "services": "Servizi",
+    "legal": "Note legali",
+    "privacy": "Politica sulla privacy",
+    "rights": "Tutti i diritti riservati."
+  }
+}

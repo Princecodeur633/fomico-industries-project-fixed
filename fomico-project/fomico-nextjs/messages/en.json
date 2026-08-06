@@ -18,8 +18,39 @@
   "hero": {
     "title": "Robust and tailor-made solutions",
     "subtitle": "Industrial supplier adapted to the most demanding environments",
+    "badge": "Industrial Supplies & Machinery",
     "cta1": "Discover our products",
-    "cta2": "Request a quote"
+    "cta2": "Request a quote",
+    "slides": {
+      "oilgas": {
+        "title": "Oil & Gas",
+        "spec": "API fittings, high-pressure valves and certified offshore equipment"
+      },
+      "mining": {
+        "title": "Mining",
+        "spec": "Drilling, crushing and handling equipment for extreme conditions"
+      },
+      "industry": {
+        "title": "Industry",
+        "spec": "Hydraulics, pneumatics, automation and industrial maintenance"
+      },
+      "energy": {
+        "title": "Energy",
+        "spec": "Equipment for power plants and energy distribution networks"
+      },
+      "agrifood": {
+        "title": "Agri-food",
+        "spec": "Food-grade stainless steel equipment compliant with HACCP and ISO 22000"
+      },
+      "maintenance": {
+        "title": "Industrial maintenance",
+        "spec": "Preventive maintenance, after-sales service and rapid on-site interventions"
+      },
+      "telecom": {
+        "title": "Telecommunications",
+        "spec": "Network infrastructure, protection equipment and installation solutions"
+      }
+    }
   },
   "services": {
     "title": "Our services",
@@ -51,6 +82,7 @@
     "construction": "Construction",
     "marine": "Marine",
     "agrifood": "Agri-food",
+    "maintenance": "Industrial maintenance",
     "telecom": "Telecommunications",
     "water": "Water & Sanitation"
   },
@@ -69,7 +101,8 @@
     "experience": "Years of experience",
     "products": "Product references",
     "clients": "Satisfied clients",
-    "countries": "Countries served"
+    "countries": "Countries served",
+    "countriesValue": "Republic of Congo, African countries and France"
   },
   "testimonials": {
     "title": "They trust us",
@@ -88,6 +121,30 @@
     "title": "Latest news",
     "subtitle": "Stay informed about our latest updates and events",
     "readMore": "Read more"
+  },
+  "welcome": {
+    "title": "Welcome to",
+    "subtitle": "Your trusted industrial partner in Congo — supplies and machinery for oil, mining and industry.",
+    "sectorsTitle": "Our business sectors",
+    "discover": "Discover FOMICO",
+    "continue": "Continue browsing",
+    "close": "Close"
+  },
+  "about": {
+    "title": "About us",
+    "heroDesc": "FOMICO Industries excels in manufacturing cutting-edge industrial supplies and machinery. Founded in 2021 in Brazzaville, we have become a trusted partner for the most demanding industries in Congo and the CEMAC region.",
+    "history": "Our history",
+    "mission": "Our mission",
+    "vision": "Our vision",
+    "values": "Our values",
+    "valuesSubtitle": "The principles that guide our daily actions.",
+    "whyChoose": "Why choose FOMICO?",
+    "strategicPartners": "Our strategic partners",
+    "strategicPartnersDesc": "Strong collaborations with global leaders to guarantee exceptional expertise and service quality.",
+    "majorPartners": "Major partners",
+    "responseTime": "Response time",
+    "certifiedProducts": "Certified products",
+    "creationYear": "Year founded"
   },
   "footer": {
     "company": "FOMICO Industries",

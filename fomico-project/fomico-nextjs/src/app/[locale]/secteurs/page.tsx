@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { 
-  Droplets, Mountain, Factory, Zap, HardHat, Ship, Wheat, Antenna, Waves, ArrowRight 
+  Droplets, Mountain, Factory, Zap, HardHat, Ship, Wheat, Antenna, Waves, ArrowRight, Wrench 
 } from "lucide-react";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
@@ -64,6 +64,13 @@ const sectors = [
     color: "from-green-700 to-green-500",
   },
   {
+    slug: "maintenance-industrielle",
+    icon: Wrench,
+    title: "Maintenance industrielle",
+    desc: "Maintenance préventive et curative, SAV, interventions rapides sur site et contrats de maintenance.",
+    color: "from-orange-700 to-orange-500",
+  },
+  {
     slug: "telecommunications",
     icon: Antenna,
     title: "Télécommunications",
@@ -79,7 +86,7 @@ const sectors = [
   },
 ];
 
-export default function SectorsPage() {
+export default function SectorsPage({ params: { locale } }: { params: { locale: string } }) {
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="bg-fomico-navy py-16">
@@ -110,7 +117,7 @@ export default function SectorsPage() {
                   <h3 className="text-xl font-bold text-fomico-navy mb-3">{sector.title}</h3>
                   <p className="text-fomico-gray-dark leading-relaxed mb-6">{sector.desc}</p>
                   <Link 
-                    href={`/fr/secteurs/${sector.slug}/`}
+                    href={`/${locale}/secteurs/${sector.slug}/`}
                     className="inline-flex items-center text-fomico-orange font-medium text-sm group-hover:gap-2 transition-all"
                   >
                     Découvrir les solutions <ArrowRight className="w-4 h-4 ml-1" />

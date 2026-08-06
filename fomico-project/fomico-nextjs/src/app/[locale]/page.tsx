@@ -12,8 +12,11 @@ import {
   Mountain,
   Factory,
   Zap,
+  Wheat,
+  Antenna,
 } from "lucide-react";
 import Hero from "@/components/Hero";
+import StatsBar from "@/components/StatsBar";
 import Reveal from "@/components/Reveal";
 
 export async function generateMetadata({
@@ -39,8 +42,8 @@ const productKeys = [
   { slug: "instrumentation", key: "instrument" },
 ];
 
-const sectorIcons = [Droplets, Mountain, Factory, Zap];
-const sectorKeys = ["oilgas", "mining", "industry", "energy"];
+const sectorIcons = [Droplets, Mountain, Factory, Zap, Wheat, Wrench, Antenna];
+const sectorKeys = ["oilgas", "mining", "industry", "energy", "agrifood", "maintenance", "telecom"];
 
 export default async function HomePage({
   params: { locale },
@@ -50,7 +53,6 @@ export default async function HomePage({
   const tServices = await getTranslations({ locale, namespace: "services" });
   const tProducts = await getTranslations({ locale, namespace: "products" });
   const tSectors = await getTranslations({ locale, namespace: "sectors" });
-  const tStats = await getTranslations({ locale, namespace: "stats" });
   const tCta = await getTranslations({ locale, namespace: "cta" });
 
   const services = [
@@ -60,63 +62,13 @@ export default async function HomePage({
     { icon: serviceIcons[3], title: tServices("custom.title"), desc: tServices("custom.desc"), key: "custom" },
   ];
 
-  const stats = [
-    { value: "6+", label: tStats("experience") },
-    { value: "10.000+", label: tStats("products") },
-    { value: "2000+", label: tStats("clients") },
-    { value: "République du Congo, pays d'Afrique et France", label: tStats("countries") },
-  ];
-
   return (
     <div className="min-h-screen bg-white">
       <Hero />
+      <StatsBar />
 
-      {/* Stats */}
-      <section className="bg-fomico-navy-light py-10">
-        <div className="container-custom grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          {stats.map((stat) => (
-            <div key={stat.label}>
-              <div className="text-2xl md:text-3xl font-bold text-fomico-orange">{stat.value}</div>
-              <div className="text-sm text-gray-300">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Services */}
+      {/* Products — first */}
       <section className="section-padding">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-fomico-navy mb-4">
-              {tServices("title")}
-            </h2>
-            <p className="text-lg text-fomico-gray-dark max-w-2xl mx-auto">
-              {tServices("subtitle")}
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => {
-              const Icon = service.icon;
-              return (
-                <Reveal key={service.key} delay={index * 80}>
-                  <div className="bg-white rounded-xl p-6 border border-gray-100 card-hover h-full">
-                    <div className="w-12 h-12 bg-fomico-orange/10 rounded-lg flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-fomico-orange" />
-                    </div>
-                    <h3 className="text-lg font-bold text-fomico-navy mb-2">{service.title}</h3>
-                    <p className="text-sm text-fomico-gray-dark leading-relaxed">
-                      {service.desc}
-                    </p>
-                  </div>
-                </Reveal>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* Products */}
-      <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-fomico-navy mb-4">
@@ -150,8 +102,8 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Sectors */}
-      <section className="section-padding">
+      {/* Sectors — second */}
+      <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-fomico-navy mb-4">
@@ -181,6 +133,38 @@ export default async function HomePage({
               {tSectors("title")}
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Services — third */}
+      <section className="section-padding">
+        <div className="container-custom">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-fomico-navy mb-4">
+              {tServices("title")}
+            </h2>
+            <p className="text-lg text-fomico-gray-dark max-w-2xl mx-auto">
+              {tServices("subtitle")}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <Reveal key={service.key} delay={index * 80}>
+                  <div className="bg-white rounded-xl p-6 border border-gray-100 card-hover h-full">
+                    <div className="w-12 h-12 bg-fomico-orange/10 rounded-lg flex items-center justify-center mb-4">
+                      <Icon className="w-6 h-6 text-fomico-orange" />
+                    </div>
+                    <h3 className="text-lg font-bold text-fomico-navy mb-2">{service.title}</h3>
+                    <p className="text-sm text-fomico-gray-dark leading-relaxed">
+                      {service.desc}
+                    </p>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>

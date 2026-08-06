@@ -4,17 +4,19 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
-import { X, Droplets, Mountain, Factory, Zap, ArrowRight } from "lucide-react";
+import { X, Droplets, Mountain, Factory, Zap, Wheat, Wrench, Antenna, ArrowRight } from "lucide-react";
+import AnimatedCounter from "./AnimatedCounter";
 
 const SESSION_KEY = "fomico_welcome_shown";
 
-const sectorIcons = [Droplets, Mountain, Factory, Zap];
-const sectorKeys = ["oilgas", "mining", "industry", "energy"] as const;
+const sectorIcons = [Droplets, Mountain, Factory, Zap, Wheat, Wrench, Antenna];
+const sectorKeys = ["oilgas", "mining", "industry", "energy", "agrifood", "maintenance", "telecom"] as const;
 
 export default function WelcomeModal() {
   const locale = useLocale();
   const tStats = useTranslations("stats");
   const tSectors = useTranslations("sectors");
+  const tWelcome = useTranslations("welcome");
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
@@ -31,7 +33,6 @@ export default function WelcomeModal() {
 
   useEffect(() => {
     if (!visible) return;
-    // Lock scroll while the modal is open.
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = "";
@@ -39,13 +40,6 @@ export default function WelcomeModal() {
   }, [visible]);
 
   if (!visible) return null;
-
-  const stats = [
-    { value: "6+", label: tStats("experience") },
-    { value: "10.000+", label: tStats("products") },
-    { value: "2000+", label: tStats("clients") },
-    { value: "République du Congo, pays d'Afrique et France", label: tStats("countries") },
-  ];
 
   return (
     <div
@@ -58,7 +52,7 @@ export default function WelcomeModal() {
       >
         <button
           onClick={() => setVisible(false)}
-          aria-label="Fermer"
+          aria-label={tWelcome("close")}
           className="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-white/90 hover:bg-white flex items-center justify-center transition-colors shadow-sm"
         >
           <X className="w-4 h-4 text-fomico-navy" />
@@ -70,27 +64,39 @@ export default function WelcomeModal() {
             <Image src="/logo.png" alt="FOMICO Industries" fill sizes="64px" className="object-contain" />
           </div>
           <h2 className="text-xl font-bold text-white mb-2">
-            Bienvenue chez <span className="text-fomico-orange">FOMICO</span> Industries
+            {tWelcome("title")} <span className="text-fomico-orange">FOMICO</span> Industries
           </h2>
           <p className="text-sm text-gray-300 max-w-sm mx-auto">
-            Votre partenaire industriel de confiance au Congo — fournitures et machines pour le pétrole, les mines et l&apos;industrie.
+            {tWelcome("subtitle")}
           </p>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-4 gap-2 px-6 py-5 border-b border-gray-100">
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="text-lg font-bold text-fomico-orange">{stat.value}</div>
-              <div className="text-[10px] text-fomico-gray-dark leading-tight mt-0.5">{stat.label}</div>
+        {/* Stats with animated counters */}
+        <div className="grid grid-cols-3 gap-2 px-6 py-5 border-b border-gray-100">
+          <div className="text-center">
+            <div className="text-lg font-bold text-fomico-orange">
+              <AnimatedCounter end={6} suffix="+" locale={locale} />
             </div>
-          ))}
+            <div className="text-[10px] text-fomico-gray-dark leading-tight mt-0.5">{tStats("experience")}</div>
+          </div>
+          <div className="text-center">
+            <div className="text-lg font-bold text-fomico-orange">
+              <AnimatedCounter end={500000} suffix="+" locale={locale} />
+            </div>
+            <div className="text-[10px] text-fomico-gray-dark leading-tight mt-0.5">{tStats("products")}</div>
+          </div>
+          <div className="text-center">
+            <div className="text-lg font-bold text-fomico-orange">
+              <AnimatedCounter end={15000} suffix="+" locale={locale} />
+            </div>
+            <div className="text-[10px] text-fomico-gray-dark leading-tight mt-0.5">{tStats("clients")}</div>
+          </div>
         </div>
 
         {/* Sectors */}
         <div className="px-6 py-5">
           <p className="text-xs font-semibold text-fomico-gray-dark uppercase tracking-wide mb-3">
-            Nos secteurs d&apos;activité
+            {tWelcome("sectorsTitle")}
           </p>
           <div className="grid grid-cols-2 gap-2">
             {sectorKeys.map((key, i) => {
@@ -115,13 +121,13 @@ export default function WelcomeModal() {
             onClick={() => setVisible(false)}
             className="btn-primary flex-1 justify-center text-sm"
           >
-            Découvrir FOMICO <ArrowRight className="w-4 h-4 ml-1" />
+            {tWelcome("discover")} <ArrowRight className="w-4 h-4 ml-1" />
           </Link>
           <button
             onClick={() => setVisible(false)}
             className="btn-outline flex-1 justify-center text-sm"
           >
-            Continuer sur le site
+            {tWelcome("continue")}
           </button>
         </div>
       </div>
